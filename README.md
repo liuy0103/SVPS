@@ -4,7 +4,7 @@ This repository contains the R code for numerical experiments in the paper **Sel
 
 ### Synthetic Networks
 
-For simulation 1 (Poisson), run `sim_poisson.R`; for simulation 2 (Binomial), run `sim_binom.R`; for simulation 3 (Negative Binomial), run `sim_nbinom.R`; for additional experiments in Appendix D, run `additional_poisson.R`. Please adjust the parameters 
+For Simulation 1 (Poisson), run `sim_poisson.R`; for Simulation 2 (Binomial), run `sim_binom.R`; for Simulation 3 (Negative Binomial), run `sim_nbinom.R`; for additional experiments in Appendix D, run `additional_poisson.R`. Please adjust the DCSBM parameters $\rho$ and $r$ accordingly to reproduce each setup in the paper.
 
 ### Les Miserables Network
 
