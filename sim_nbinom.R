@@ -219,7 +219,6 @@ Stepwise <- function(A, Kmax = 10, clus = 'SCORE', thres, tau = 0.25){
     }
     
     M_hat <- t(theta_hat * (Pi_hat %*% B_hat %*% t(Pi_hat)) ) * theta_hat
-    # V_hat <- M_hat / (1 - M_hat / n_nb)
     V_hat <- M_hat
     
     mat <- V_hat
@@ -365,7 +364,6 @@ ggplot(df, aes(x = K, y = value, linetype = variable, shape = variable, color = 
         legend.text = element_text(size = 18),
         legend.justification = c(1, 0), legend.position = c(0.3, 0.05))
 
-ggsave("plots_new/negBinom_r=4.png", width = 200, height = 140, units = 'mm')
 
-save.image(file = "workspace_new/negBinom_r=4.RData")
+
 

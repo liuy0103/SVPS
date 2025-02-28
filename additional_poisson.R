@@ -1,4 +1,4 @@
-# Functions for other methods ---------------------------------------------------------------------
+# Other methods and spectral clustering with SCORE and RSC ---------------------------------------------------------------------
 
 library(RSpectra)
 library(irlba)
@@ -139,7 +139,7 @@ SCORE <- function (A, K, threshold = NULL)
 
 
 
-# SVPS Functions and DCSBM generation functions -------------------------------------------------------
+# Functions for SVPS and DCSBM generation -------------------------------------------------------
 
 library(randnet)
 
@@ -379,9 +379,6 @@ ggplot(df, aes(x = K, y = value, linetype = variable, shape = variable, color = 
         legend.key.size = unit(0.5, 'lines'),
         legend.position=c(0.3, 0.05))
 
-ggsave("plots/additional/poisson_large_3.png", width = 200, height = 140, units = 'mm')
-
-save.image(file = "workspace/additional/poisson_large_3.RData")
 
 
 
@@ -481,8 +478,6 @@ ggplot(df, aes(x = K, y = value, linetype = variable, shape = variable, color = 
         legend.key.size = unit(0.5, 'lines'),
         legend.position = c(0.33, -0.03))
 
-ggsave("plots/additional/poisson_large_r=4.png", width = 200, height = 140, units = 'mm')
 
-save.image(file = "workspace/additional/poisson_large_r=4.RData")
 
 

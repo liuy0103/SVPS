@@ -367,9 +367,7 @@ ggplot(df, aes(x = K, y = value, linetype = variable, shape = variable, color = 
         legend.justification=c(1, 0), 
         legend.position=c(0.3, 0.05))
 
-ggsave("plots/poisson_r=2.png", width = 200, height = 140, units = 'mm')
 
-save.image(file = "workspace/poisson_r=4.RData")
 
 
 
